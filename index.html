@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Bin</title>
+  <style>
+  	#image{
+  		width:100px;
+  		height:100px;
+  	}
+
+    #image:hover {
+      width:150px;
+      height:150px;
+}
+    #bot{
+    	width:200px;
+    	height:300px;
+        position:relative;
+
+    }
+  </style>
+</head>
+<body>
+<div id="bot">
+<img id="image" src="myImage.png" onclick="openBot()" >
+<br><textarea id="text">Hey, I am XYZ, How may I help you?</textarea>
+</div>
+
+<script>
+	function openBot(){
+		pic = document.getElementById('image');
+		pic.style.width="0px";
+		pic.style.height="0px"; 
+		text1 = document.getElementById('text');
+		text1.innerHTML = "Who Do You Want To Hire?";
+		cb = document.getElementById('bot');
+		cb.style.background = "grey";
+	}
+</script>
+
+
+
+
+</body>
+</html>
